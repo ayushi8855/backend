@@ -1,0 +1,20 @@
+use assignment
+db
+db.createCollection("user")
+db.user.insertMany([{"first_name":"ayushi","last_name":"Jain","email":"ayushi@gmail.com","age":"21","gender":"F"},
+{"first_name":"ayushi","last_name":"Jain","email":"ayushi@gmail.com","age":"19","gender":"F"},
+{"first_name":"aman","last_name":"Jain","email":"aman@gmail.com","age":"20","gender":"m"},
+{"first_name":"noor","last_name":"jain","email":"noor@gmail.com","age":"21","gender":"m"},
+{"first_name":"tanya","last_name":"Jain","email":"tanya@gmail.com","age":"21","gender":"F"},
+{"first_name":"ram","last_name":"Jain","email":"aram@gmail.com","age":"25","gender":"F"},
+{"first_name":"raju","last_name":"Jain","email":"raju@gmail.com","age":"26","gender":"m"},
+{"first_name":"bablu","last_name":"Jain","email":"bablu@gmail.com","age":"27","gender":"m"},
+{"first_name":"pablo","last_name":"Jain","email":"pablo@gmail.com","age":"28","gender":"F"},
+{"first_name":"ankush","last_name":"Jain","email":"ankush@gmail.com","age":"24","gender":"m"},
+{"first_name":"aysha","last_name":"Jain","email":"aysha@gmail.com","age":"23","gender":"F"},
+{"first_name":"shi","last_name":"Jain","email":"shi@gmail.com","age":"22","gender":"F"},])
+db.user.find({}).pretty()
+db.user.findOne({"age":"21"})
+db.user.update({"first_name":"ayushi"},{$set:{"phn":"254555"}})
+db.user.updateMany({"age":"21"},{$set:{"country":"India"}})
+db.user.remove({"phn":"254555"})
