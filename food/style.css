@@ -1,0 +1,104 @@
+#nav {
+    display: flex;
+    /* background-color: rgb(28, 46 ,51); */
+    
+    justify-content: space-between;
+    height: 40px;
+    width: 95%;
+    margin: 2% 2% 0 1.5%;
+    padding: 25px 0 0 20px;
+    border: 2px solid rgb(44, 66, 128);
+    color: black;
+    background-color: white;
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-weight: bold;
+}
+
+.left {
+    width: 70%;
+}
+
+#cont{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap: 10px;
+    margin-left: 5%;
+    height: 750px;
+    overflow: hidden;
+    overflow: scroll;
+}
+#cont img {
+     width: 100%;
+     border-radius: 5px;
+
+}
+
+
+#meal{
+    margin-top: 10px;
+    width: 1200px;
+    height: 750px;
+    overflow: hidden;
+    overflow: scroll;
+    margin-right: 20px;
+    text-align: center;
+    font-weight: bolder;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6FQsKnr6WV65RYc83eIPgd9MgSwabrJPXcg&usqp=CAU");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+#meal img
+{
+   width: 100%;
+}
+#main{
+    display: flex;
+}
+#cont div{
+text-align: center;
+    width: 80%;
+    font-weight: bold;
+}
+#cont div:hover{
+    background: palevioletred;
+}
+#search{
+    margin-top: 20px;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    /* margin: auto; */
+}
+#cont2>div{
+    margin-left: 200px;
+   
+    width: 70%;
+   
+
+}
+#cont2 p{
+    font-size: 30px;
+    
+}
+#cont2 img{
+    width: 100%;
+}
+body{
+    background-color:rgb(221, 198, 198);
+}
+h1{
+    text-align: center;
+}
+#upper{
+    display: flex;
+}
+#detail{
+    margin-left: 10%;
+    font-size: 26px;
+    color: white;
+    font-style: italic;
+}
